@@ -1,95 +1,59 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import './home.scss'
+import Link from "next/link";
+import { AiFillFacebook, AiFillYoutube } from 'react-icons/ai';
+import { BsLinkedin } from 'react-icons/bs';
+import { DiWordpress, DiJavascript1, DiReact } from 'react-icons/di';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className="home">
+        <div className="hero">
+          <div className="hero-content">
+            <div className="hero-info">
+              <h4>WELCOME TO MY WORLD</h4>
+              <h1> Hi, I’m <span>Jone Lee</span> </h1>
+              <h1>UI/UX Designer.</h1>
+              <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
+            </div>
+            <div className="hero-social">
+              <div className="social-link">
+                <h4>FIND WITH ME</h4>
+                <ul>
+                  <li> <Link href="#"> <AiFillFacebook />  </Link> </li>
+                  <li> <Link href="#"> <BsLinkedin />  </Link> </li>
+                  <li> <Link href="#"> <AiFillYoutube />  </Link> </li>
+                </ul>
+              </div>
+              <div style={{paddingRight: "150px"}} className="social-link">
+                <h4>BEST SKILL ON</h4>
+                <ul>
+                  <li> <Link href="#"> <DiWordpress />  </Link> </li>
+                  <li> <Link href="#"> <DiJavascript1 />  </Link> </li>
+                  <li> <Link href="#"> <DiReact />  </Link> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="hero-image">
+            <div className="img-box">
+              <img src="https://inbio-react.netlify.app/static/ded8a3ee1283dbfbd7037143e582473f/27747/banner-03.webp" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div className="featured-wraper">
+          <div className="featured-title">
+            <h4>FEATURES</h4>
+            <h1> What I DO </h1>
+          </div>
+          <div className="featured-item-box">
+            <div className="item">
+              
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   )
 }

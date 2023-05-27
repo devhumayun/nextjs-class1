@@ -1,0 +1,36 @@
+.menuBar {
+  width: 100%;
+  background-color: aliceblue;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+  .menu-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      h2 {
+        cursor: pointer;
+      }
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            padding: 0px 10px;
+          }
+        }
+      }
+    }
+  }
+}
