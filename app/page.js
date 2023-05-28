@@ -1,6 +1,6 @@
 import './home.scss'
 import Link from "next/link";
-import { AiFillFacebook, AiFillYoutube } from 'react-icons/ai';
+import { AiFillFacebook, AiFillYoutube, AiOutlineMenu, AiOutlineArrowRight } from 'react-icons/ai';
 import { BsLinkedin } from 'react-icons/bs';
 import { DiWordpress, DiJavascript1, DiReact } from 'react-icons/di';
 
@@ -49,7 +49,52 @@ export default function Home() {
           </div>
           <div className="featured-item-box">
             <div className="item">
-              
+              <span><AiOutlineMenu /></span>
+              <h4>Business Stratagy</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio! Cupiditate, necessitatibus itaque.</p>
+              <div className="arro-right">
+                <AiOutlineArrowRight />
+              </div>
+            </div>
+            <div className="item">
+              <span><AiOutlineMenu /></span>
+              <h4>Business Stratagy</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio! Cupiditate, necessitatibus itaque.</p>
+              <div className="arro-right">
+                <AiOutlineArrowRight />
+              </div>
+            </div>
+            <div className="item">
+              <span><AiOutlineMenu /></span>
+              <h4>Business Stratagy</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio! Cupiditate, necessitatibus itaque.</p>
+              <div className="arro-right">
+                <AiOutlineArrowRight />
+              </div>
+            </div>
+            <div className="item">
+              <span><AiOutlineMenu /></span>
+              <h4>Business Stratagy</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio! Cupiditate, necessitatibus itaque.</p>
+              <div className="arro-right">
+                <AiOutlineArrowRight />
+              </div>
+            </div>
+            <div className="item">
+              <span><AiOutlineMenu /></span>
+              <h4>Business Stratagy</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio! Cupiditate, necessitatibus itaque.</p>
+              <div className="arro-right">
+                <AiOutlineArrowRight />
+              </div>
+            </div>
+            <div className="item">
+              <span><AiOutlineMenu /></span>
+              <h4>Business Stratagy</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio! Cupiditate, necessitatibus itaque.</p>
+              <div className="arro-right">
+                <AiOutlineArrowRight />
+              </div>
             </div>
           </div>
         </div>
